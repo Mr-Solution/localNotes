@@ -30,7 +30,7 @@ X Windows (1984诞生于 MIT) 也被叫做“X”，“X 11”，是为了在 UN
 
 **Linux 图形界面层次关系如下：**
 
-Linux kernel -> X server <- X 协议 -> 桌面环境 -> X 应用程序。
+Linux kernel  \-\-\>  X server <\-\- X 协议 \-\-\> 桌面环境 \-\-\> X 应用程序。
 
 ## Shell
 
