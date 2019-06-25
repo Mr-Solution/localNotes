@@ -7,6 +7,8 @@ tags: [Python]
 
 字符串的访问跟列表一样，用方括号访问，支持切片操作。  
 python 支持格式化字符串的输出，最基本的用法是字符串中插入 `%s`：
+<!--more-->
+
 ```python
 print("My name is %s." % ("LiLei"))
 str = "Her name is %s" % ("HanMeimei")

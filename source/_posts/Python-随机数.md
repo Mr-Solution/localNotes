@@ -6,6 +6,8 @@ tags: [Python]
 ---
 
 有这样一个场景：在蛇棋游戏中，总共有 100 个格子，其中有 ladder_num 个格子中有梯子，梯子的作用是让棋子直通到另外一个格子中。用 python 实现梯子功能的代码片段如下：
+<!--more-->
+
 ```python
 ladders = dict(np.random.randint(1, 100, size=(ladder_num, 2)))
 for k,v in ladders.items():
