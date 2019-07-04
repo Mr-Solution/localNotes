@@ -5,10 +5,12 @@ categories: Python Notes
 tags: [Python]
 ---
 
+模块通过使用命名空间提供了将部件组织为系统的简单的方法。在一个模块文件的顶层定义的所有的变量名都成了被导入的模块对象的属性。在模块导入时，模块文件的全局作用域变成了模块对象的命名空间。Python 的模块允许将独立的文件连接成一个更大的程序系统。
+<!--more-->
 ## 模块和包
 
 在 Python 中，一个 .py 文件就是一个模块（module）。使用模块大大提高了代码的可维护性，一个模块编写完成，就可以被其他项目代码引用。使用模块还可以避免函数名和变量名的冲突，相同名字的函数和变量可以分别存在于不同的模块中。我们在编写自己的模块时，不必考虑名字与其他模块内名字冲突。
-<!--more-->
+
 在创建许许多多模块后，我们可能希望将某些功能相近的文件组织在同一文件夹下，这里就需要运用包的概念了。简单的说，包就是一个文件夹，但该文件夹下必须有 \_\_init\_\_.py 文件（若无，则 Python 将其视为一个普通目录）。常见的包结构如下：  
 
 ```
@@ -125,7 +127,7 @@ from .registry import apps
 
 __all__ = ['AppConfig', 'apps']
 ```
-包 apps 内有三个文件 `\_\_init\_\_.py`，`config.py`，`registry.py`。如果我们什么也不做，直接 import apps，是可以成功导入的，但是在使用的时候，`apps.config.AppConfig` 会报错，`module 'apps' has no attribute 'config'`，Python 在这里直接导入了一个模块，而未能按照包来处理。但是在 \_\_init\_\_.py 中加入那两行代码之后，`import apps`相当于执行了这两个 from 导入。另外一种写法就是，\_\_init\_\_.py 中不写 from 语句，在需要导入包的地方使用`from apps import config`，这样也可以实现模块的导入，同时也没有破坏命名空间。
+包 apps 内有三个文件 `__init__.py`，`config.py`，`registry.py`。如果我们什么也不做，直接`import apps`，是可以成功导入的，但是在使用的时候，`apps.config.AppConfig` 会报错，`module 'apps' has no attribute 'config'`，Python 在这里直接导入了一个模块，而未能按照包来处理。但是在`__init__.py`中加入那两行代码之后，`import apps`相当于执行了这两个`from`导入。另外一种写法就是，`__init__.py`中不写`from`语句，在需要导入包的地方使用`from apps import config`，这样也可以实现模块的导入，同时也没有破坏命名空间。
 
 再来看看 \_\_all\_\_ 变量。该变量定义了以 `from ... import *` 语句形式导入包时，需要导出什么。若定义了这个变量，那么使用`from ... import *`导入包时，并不会导入包内所有的模块的所有变量，而是只导出列表中的变量。
 
@@ -146,7 +148,7 @@ __all__ = ['AppConfig', 'apps']
 
 'a test module '  # 任何模块代码的第一个字符串都被视为模块的文档注释
 
-__author__ = 'LiBo'
+__author__ = 'Harry Potter'
 
 import sys
 

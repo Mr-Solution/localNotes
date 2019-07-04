@@ -8,7 +8,7 @@ subtitle: The Hacker's Guide to the Algorithm
 description: an introduction
 keywords:
 author: Mr-Solution
-language: zh-Hans
+language: zh-CN # next6:zh-Han next7:zh-CN
 timezone:
 
 # URL
@@ -74,7 +74,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 #theme: landscape
-theme: next
+theme: next7
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
