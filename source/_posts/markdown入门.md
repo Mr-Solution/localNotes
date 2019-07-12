@@ -239,3 +239,32 @@ markdown制作表格使用`|`来分隔单元格，使用`-`来分隔表头和其
 |单元格|单元格|
 |单元格|单元格|
 
+当然，markdown支持用html编写表格：
+``` html
+<table>
+    <tr>
+        <td>姓名</td> <td>LiLei</td> <td>Han Meimei</td>
+    </tr>
+    <tr>
+        <td>年龄</td> <td>26</td> <td>26</td>
+    </tr>
+<table>
+```
+显示如下：  
+{% raw %}
+<table>
+    <tr>
+        <td>姓名</td> <td>LiLei</td> <td>Han Meimei</td>
+    </tr>
+    <tr>
+        <td>年龄</td> <td>26</td> <td>26</td>
+    </tr>
+<table>
+{% endraw %}  
+
+更多关于HTML表格的知识参阅：[W3C](http://www.w3school.com.cn/html/html_tables.asp)。
+
+
+**PS:** 若使用hexo搭建博客，在页面嵌入 HTML table 的时候会遇到一些问题，表格前会有大片留白，这时候需要在 HTML 代码前加上 \{\% raw \%\}，在代码结尾加上\{\% endraw \%\} (去掉'\\'，hexo的小问题)。
+
+以上。
