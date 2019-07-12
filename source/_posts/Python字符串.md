@@ -22,3 +22,5 @@ str = "Her name is %s" % ("HanMeimei")
 >>>"{0} {1} {0}".format("hello", "world")
 hello world hello
 ```
+
+以上。

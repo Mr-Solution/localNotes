@@ -42,3 +42,5 @@ for i in range(0, int(count_down/interval)):
 
 print("\rinstallation accomplished.")
 ```
+
+以上。
