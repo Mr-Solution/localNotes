@@ -270,7 +270,10 @@ markdown制作表格使用`|`来分隔单元格，使用`-`来分隔表头和其
 ## 7.公式
 
 可以借助 LaTeX 语法编辑公式，使用一个或两个 \$ 符号将公式包起来，`$$...$$`，`$...$`。  
+参阅以下博客：  
 [Markdown公式符号](https://www.jianshu.com/p/6e5dff42a77e)  
 [Markdown下LaTeX公式、编号、对齐](https://www.zybuluo.com/fyywy520/note/82980)  
+[常用数学符号的LaTeX表示方法](http://www.mohu.org/info/symbols/symbols.htm)  
+[Markdown公式编辑学习笔记](https://www.cnblogs.com/q735613050/p/7253073.html)  
 
 以上。
