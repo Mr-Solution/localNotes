@@ -267,4 +267,10 @@ markdown制作表格使用`|`来分隔单元格，使用`-`来分隔表头和其
 
 **PS:** 若使用hexo搭建博客，在页面嵌入 HTML table 的时候会遇到一些问题，表格前会有大片留白，这时候需要在 HTML 代码前加上 \{\% raw \%\}，在代码结尾加上\{\% endraw \%\} (去掉'\\'，hexo的小问题)。
 
+## 7.公式
+
+可以借助 LaTeX 语法编辑公式，使用一个或两个 \$ 符号将公式包起来，`$$...$$`，`$...$`。  
+[Markdown公式符号](https://www.jianshu.com/p/6e5dff42a77e)  
+[Markdown下LaTeX公式、编号、对齐](https://www.zybuluo.com/fyywy520/note/82980)  
+
 以上。

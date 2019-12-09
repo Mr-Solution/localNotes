@@ -219,7 +219,7 @@ $pip install -r requirements.txt
 ```
 安装完依赖之后安装 mujoco_py：
 ```shell
-$pip install -u 'mujoco-py<1.50.2,>=1.50.1'
+$pip install -U 'mujoco-py<1.50.2,>=1.50.1'
 ```
 安装过程中如果 gcc 报错，那么执行以下语句：
 ```shell
@@ -291,10 +291,10 @@ baseline 需要 python3.5 及其以上的版本。
 ```shell
 $sudo apt install libopenmpi-dev
 ```
-
+s
 baseline 安装方法如下：
 ```shell
-$git clone https://github.com/openai/baseline.git
+$git clone https://github.com/openai/baselines.git
 $cd baseline
 $pip install -e .
 ```
